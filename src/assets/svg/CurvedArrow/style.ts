@@ -1,0 +1,12 @@
+import styled from "styled-components";
+import { Icon } from "../Icon";
+
+const Svg = styled(Icon)`
+  width: 23px;
+  height: 28px;
+  transition: 0.3s linear;
+  cursor: pointer;
+  color: #fff;
+`;
+
+export { Svg };

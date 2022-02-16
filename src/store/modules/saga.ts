@@ -6,6 +6,6 @@ export function* AutoLoginSaga() {}
 /**
  * Root saga manages watcher lifecycle
  */
-// export function* appSaga() {
-//   yield takeLatest(appActions.autoLoginTrigger, AutoLoginSaga);
-// }
+export function* appSaga() {
+  yield takeLatest(appActions.trigger, AutoLoginSaga);
+}

@@ -2,9 +2,11 @@ import styled from "styled-components";
 
 export const btnReset = `
   border: none;
-  min-width: 120px;
+  min-width: 70px;
   background: transparent;
   cursor: pointer;
+  transition: 0.3s linear;
+  position:relative;
 `;
 
 export const pReset = `

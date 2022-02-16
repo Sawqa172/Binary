@@ -5,7 +5,9 @@ import { initialState } from "./state";
 const appSlice = createSlice({
   name: "app",
   initialState,
-  reducers: {},
+  reducers: {
+    trigger: (state) => state,
+  },
 });
 
 export const { actions, reducer, name } = appSlice;
