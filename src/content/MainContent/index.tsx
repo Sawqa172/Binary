@@ -36,7 +36,7 @@ export const MainContent = ({ ...props }) => {
           <CurvedArrow />
         </MainContentInteractionsRates>
       </MainContentInteractions>
-      {/*<Chart />*/}
+      <Chart />
       <Sidebar />
     </MainContentWrapper>
   );

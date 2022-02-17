@@ -17,6 +17,7 @@ import {
 //images
 import { Question } from "assets/svg/Question";
 import { Note } from "assets/svg/Note";
+import { Flag } from "assets/svg/Flag";
 
 //toast
 import { ToastContainer, toast } from "react-toastify";
@@ -28,6 +29,8 @@ export const Sidebar = () => {
       autoClose: 2000,
       hideProgressBar: true,
       closeOnClick: false,
+      icon: Flag,
+      className: "customTostify",
     });
   };
 

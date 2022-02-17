@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { btnReset } from "style/ResetByClasses";
 
+import { ToastContainer } from "react-toastify";
+
 interface ISidebarButton {
   up?: boolean;
 }
@@ -66,7 +68,7 @@ const SidebarButton = styled.button<ISidebarButton>`
   ${btnReset};
   background: ${(p) => (p.up ? "#38B781" : "#FF545E")};
   color: #fff;
-  font-size: 12px;
+  font-size: 14px;
   font-family: "Nunito";
   font-weight: 700;
   line-height: 32px;

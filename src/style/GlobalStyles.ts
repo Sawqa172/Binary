@@ -39,4 +39,12 @@ export const GlobalStyle = createGlobalStyle`
     height: 100%;
   }
   
+  //tostify
+  .customTostify{
+    background-color: #27AE60;
+    div{
+      color: #fff;
+    }
+  }
+  
 `;

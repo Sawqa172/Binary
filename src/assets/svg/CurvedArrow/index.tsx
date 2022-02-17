@@ -1,7 +1,7 @@
 import { Svg } from "./style";
 
 export const CurvedArrow = (props) => (
-  <Svg viewBox="0 0 37 35" {...props}>
+  <Svg viewBox="0 0 35 35" {...props}>
     <path
       d="M4.36121 21.6225L11.7734 16.8578C12.1094 16.6418 12.5409 16.6448 12.8717 16.8656L19.466 21.2664C19.7968 21.4872 20.2283 21.4902 20.5644 21.2742L28.375 16.2535"
       stroke="currentColor"

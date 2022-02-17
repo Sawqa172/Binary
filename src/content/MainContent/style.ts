@@ -15,6 +15,7 @@ const MainContentInteractions = styled.div`
   top: 72px;
   left: -4px;
   display: flex;
+  z-index: 4;
 `;
 const MainContentInteractionsItem = styled.div`
   display: flex;
