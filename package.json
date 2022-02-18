@@ -18,7 +18,8 @@
     "react-apexcharts": "^1.3.9",
     "react-chartjs-2": "^4.0.0",
     "react-dom": "^17.0.2",
-    "react-hook-form": "^7.25.0",
+    "react-hook-form": "^7.27.0",
+    "react-imask": "^6.4.2",
     "react-redux": "^7.2.6",
     "react-router-dom": "5.3.0",
     "react-scripts": "5.0.0",
@@ -27,6 +28,7 @@
     "redux-injectors": "^1.3.0",
     "redux-saga": "^1.1.3",
     "styled-components": "^5.3.3",
+    "swiper": "^8.0.6",
     "typescript": "^4.5.4",
     "uuid": "^8.3.2",
     "web-vitals": "^2.1.3"

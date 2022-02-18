@@ -13,31 +13,41 @@ import {
 //images
 import coin from "assets/images/coin.png";
 import { Image } from "assets/images/Image";
-import { Dropdown } from "components/Dropdown";
 import { CurvedArrow } from "assets/svg/CurvedArrow";
+
+//components
+import { Dropdown } from "components/Dropdown";
+import { ModalSwiper } from "components/ModalSwiper";
+
+//modules
 import { Sidebar } from "./Sidebar";
 import { Chart } from "./Chart";
 
 export const MainContent = ({ ...props }) => {
+  let auth = true;
+
   return (
     <MainContentWrapper>
-      <MainContentInteractions>
-        <MainContentInteractionsItem>
-          <DropdownCoinWrapper>
-            <Image src={coin} alt={"Logo image"} />
-            <Dropdown title="Litecoin" />
-          </DropdownCoinWrapper>
-          <Dropdown title="Процент доходности" />
-        </MainContentInteractionsItem>
-        <MainContentInteractionsRates>
-          <MainContentInteractionsRatesTitle>
-            eth/usd
-          </MainContentInteractionsRatesTitle>
-          <CurvedArrow />
-        </MainContentInteractionsRates>
-      </MainContentInteractions>
+      {auth && (
+        <MainContentInteractions>
+          <MainContentInteractionsItem>
+            <DropdownCoinWrapper>
+              <Image src={coin} alt={"Logo image"} />
+              <Dropdown title="Litecoin" />
+            </DropdownCoinWrapper>
+            <Dropdown title="Процент доходности" />
+          </MainContentInteractionsItem>
+          <MainContentInteractionsRates>
+            <MainContentInteractionsRatesTitle>
+              eth/usd
+            </MainContentInteractionsRatesTitle>
+            <CurvedArrow />
+          </MainContentInteractionsRates>
+        </MainContentInteractions>
+      )}
       <Chart />
       <Sidebar />
+      {!auth && <ModalSwiper />}
     </MainContentWrapper>
   );
 };

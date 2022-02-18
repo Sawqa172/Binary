@@ -254,7 +254,6 @@ export const Chart = () => {
       },
     ],
   };
-
   let options = {
     chart: {
       height: "100%",
