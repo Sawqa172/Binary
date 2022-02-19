@@ -73,7 +73,6 @@ const ModalPhoneFormSubmit = styled.button`
   ${btnReset};
   width: 100%;
   height: 40px;
-  padding-left: 20px;
   background-color: ${variables.green};
   color: #fff;
   font-weight: 700;
