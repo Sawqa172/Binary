@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { btnReset } from "style/ResetByClasses";
 
 import { ToastContainer } from "react-toastify";
+import { variables } from "style/variables";
 
 interface ISidebarButton {
   up?: boolean;
@@ -66,7 +67,7 @@ const SidebarBetPrice = styled.span`
 const SidebarButton = styled.button<ISidebarButton>`
   padding: 5px 12px;
   ${btnReset};
-  background: ${(p) => (p.up ? "#38B781" : "#FF545E")};
+  background: ${(p) => (p.up ? variables.green : variables.red)};
   color: #fff;
   font-size: 14px;
   font-family: "Nunito";

@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { btnReset } from "../../style/ResetByClasses";
+import { btnReset } from "style/ResetByClasses";
+import { variables } from "style/variables";
 
 interface IModalWrapper {
   active: boolean;
@@ -40,7 +41,7 @@ const PaginationWrapper = styled.div`
         opacity: 1;
       }
       &.swiper-pagination-bullet-active {
-        background: #38b781;
+        background: ${variables.green};
       }
       &:hover:not(.swiper-pagination-bullet-active) {
         transform: scale(1.05);
@@ -118,7 +119,7 @@ const SwiperCloseButton = styled.button`
   justify-content: center;
   z-index: 12;
   &:hover svg {
-    color: #38b781;
+    color: ${variables.green};
   }
 `;
 

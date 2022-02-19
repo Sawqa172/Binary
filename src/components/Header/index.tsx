@@ -24,6 +24,7 @@ import { HeaderDropdown } from "./HeaderDropdown";
 
 //data
 import { data } from "./data";
+import { ModalPhone } from "./ModalPhone";
 
 let auth = false;
 
@@ -66,6 +67,7 @@ export const Header = ({ ...props }) => {
           </HeaderLeft>
           <HeaderRight>
             <HeaderRightInteractions>
+              <ModalPhone />
               <HeaderRightInteractionLink active>
                 Регистрация
               </HeaderRightInteractionLink>

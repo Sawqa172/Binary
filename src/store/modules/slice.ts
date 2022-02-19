@@ -7,6 +7,10 @@ const appSlice = createSlice({
   initialState,
   reducers: {
     trigger: (state) => state,
+
+    setPhoneToStoreTrigger: (state, action) => {
+      state.phone = action.payload;
+    },
   },
 });
 

@@ -9,7 +9,7 @@ const DropdownWrapper = styled.div<IDropdownList>`
   position: relative;
   cursor: pointer;
   svg {
-    transform: ${(p) => (p.active ? "rotate(180deg)" : "rotate(0)")};
+    transform: ${(p) => (p.active ? "rotateX(180deg)" : "rotateX(0)")};
   }
 `;
 

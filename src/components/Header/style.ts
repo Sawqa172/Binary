@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { aReset, btnReset } from "style/ResetByClasses";
+import { variables } from "style/variables";
 //types
 interface IHeaderRightInteractionsLink {
   active?: boolean;
@@ -37,6 +38,7 @@ const HeaderRight = styled.div`
 `;
 
 const HeaderRightInteractions = styled.div`
+  position: relative;
   padding: 5px;
   display: flex;
   background: #2c303f;
@@ -59,7 +61,7 @@ const HeaderRightInteractionLink = styled.button<IHeaderRightInteractionsLink>`
   font-family: "Roboto";
   font-size: 12px;
   ${btnReset};
-  background: ${(p) => (p.active ? "#50AC62" : "")};
+  background: ${(p) => (p.active ? variables.green : "")};
 `;
 const HeaderRightUserInfo = styled.div`
   display: flex;

@@ -19,3 +19,9 @@ export const aReset = `
   text-decoration:none;
  }
 `;
+
+export const inputReset = `
+    border:none;
+    background:#fff;
+    outline:none;
+`;
